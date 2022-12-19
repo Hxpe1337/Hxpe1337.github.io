@@ -1,0 +1,66 @@
+h1 {
+    text-align: center;
+    text-shadow: -0.5px -0.5px 0 rgb(253, 253, 253), 0.5px -0.5px 0 rgb(253, 253, 253), -0.5px 0.5px 0 rgb(253, 253, 253), 1px 1px 0 rgb(253, 253, 253);
+
+}
+
+body {
+    background-color: black;
+}
+
+.pfp {
+    border-radius: 50%;
+    width: 200px;
+
+    height: 200px;
+}
+
+.box {
+    width: 450px;
+    background: rgb(5, 5, 5);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: black;
+    font-family: monospace;
+}
+
+p {
+    margin: auto;
+    width: 55%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    filter: blur(1px);
+    transition: 0.2s;
+}
+
+p2 {
+    margin: auto;
+    width: 50%;
+
+    color: black;
+    text-align: center;
+
+}
+
+.social {
+    width: 55%;
+    background-color: white;
+    margin: auto;
+    height: 50px;
+    filter: blur(2px);
+    transition: 0.2s;
+    padding-bottom: 10px;
+}
+
+.social:hover {
+    filter: blur(0px);
+    transition: 0.2s;
+}
+
+p:hover {
+    filter: blur(0px);
+    transition: 0.2s;
+}
