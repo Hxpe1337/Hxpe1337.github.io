@@ -1,6 +1,27 @@
 h1 {
     text-align: center;
-    color: white;
+    color: #131313;
+    font-family: monospace;
+    width: 250px;
+
+    margin: auto;
+
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+a {
+
+    text-decoration: none;
+
+    color: #292929;
+}
+
+.marked {
+    background-color: white;
 }
 
 body {
@@ -8,30 +29,103 @@ body {
 }
 
 .pfp {
+    padding-bottom: 40px;
     border-radius: 50%;
     width: 200px;
+    /* you can use % */
+    height: auto;
 
-    height: 200px;
+}
+
+.dc {
+    margin: auto;
+    width: 55%;
+    filter: blur(2px);
+    background-color: 10, 10, 10;
+    color: #6E6D6A;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.ig {
+    margin: auto;
+    width: 55%;
+    filter: blur(2px);
+    background-color: 10, 10, 10;
+    color: #6E6D6A;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.email {
+    margin: auto;
+    width: 55%;
+    filter: blur(2px);
+    background-color: 10, 10, 10;
+    color: #6E6D6A;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.dc:hover {
+    margin: auto;
+    width: 55%;
+    filter: blur(0px);
+    background-color: 10, 10, 10;
+    color: #6E6D6A;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.ig:hover {
+    margin: auto;
+    width: 55%;
+    filter: blur(0px);
+    background-color: 10, 10, 10;
+    color: #6E6D6A;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.email:hover {
+    margin: auto;
+    width: 55%;
+    filter: blur(0px);
+    background-color: 10, 10, 10;
+    color: #6E6D6A;
+    text-align: center;
+    transition: 0.2s;
 }
 
 .box {
+
     width: 450px;
-    background: rgb(5, 5, 5);
-    padding: 40px;
+    background: black;
+    padding: 50px;
     text-align: center;
     margin: auto;
     margin-top: 5%;
-    color: black;
+    color: 10, 10, 10;
     font-family: monospace;
 }
 
 p {
     margin: auto;
     width: 55%;
-    background-color: white;
-    color: black;
+    filter: blur(2px);
+    background-color: 10, 10, 10;
+    color: #6E6D6A;
     text-align: center;
-    filter: blur(1px);
+    transition: 0.2s;
+}
+
+p:hover {
+    margin: auto;
+    width: 55%;
+    filter: blur(0px);
+    background-color: 10, 10, 10;
+    color: #6E6D6A;
+    text-align: center;
     transition: 0.2s;
 }
 
@@ -39,27 +133,23 @@ p2 {
     margin: auto;
     width: 50%;
 
-    color: black;
-    text-align: center;
-
+    color: #6E6D6A;
+    text-align: left;
+    max-width: 200px;
 }
 
 .social {
     width: 55%;
-    background-color: white;
+    background-color: 10, 10, 10;
     margin: auto;
-    height: 50px;
+    height: auto;
     filter: blur(2px);
     transition: 0.2s;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .social:hover {
-    filter: blur(0px);
-    transition: 0.2s;
-}
-
-p:hover {
     filter: blur(0px);
     transition: 0.2s;
 }
