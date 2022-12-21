@@ -1,35 +1,92 @@
-h1 {
-    text-align: center;
-    color: #131313;
-    font-family: monospace;
-    width: 250px;
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-    margin: auto;
+.xd {
+    font-weight: 50;
+    color: #292929;
+    font-family: 'Anonymous Pro', monospace;
+
+
 
 }
 
+.line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 8s steps(44) 1s 1 normal both,
+        blinkTextCursor 1.5s steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 10em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: transparent;
+    }
+
+    to {
+        border-right-color: #292929;
+    }
+}
+
 body {
+    background-image: url("image.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+
     overflow-y: hidden;
     overflow-x: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 a {
 
     text-decoration: none;
 
-    color: #292929;
+    color: #ffffff;
 }
 
 .marked {
     background-color: white;
 }
 
-body {
-    background-color: black;
-}
+
 
 .pfp {
-    padding-bottom: 40px;
+    opacity: 0.5;
+    background-color: white;
     border-radius: 50%;
     width: 200px;
     /* you can use % */
@@ -100,19 +157,20 @@ body {
 .box {
 
     width: 450px;
-    background: black;
+    background: rgb(15, 15, 15);
     padding: 50px;
     text-align: center;
     margin: auto;
     margin-top: 5%;
-    color: 10, 10, 10;
+    color: rgba(52, 52, 52, 0.279);
+    border-radius: 2.5%;
     font-family: monospace;
 }
 
 p {
     margin: auto;
     width: 55%;
-    filter: blur(2px);
+
     background-color: 10, 10, 10;
     color: #6E6D6A;
     text-align: center;
