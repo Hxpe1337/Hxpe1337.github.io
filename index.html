@@ -1,50 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title> 666 666 666 666 666 </title>
-    <title>Document</title>
+    <title>Cookie Retriever</title>
 </head>
-
-
 <body>
-
-
-    <div class="box">
-        <br>
-        <br>
-        <img src="profile.jpg" class="pfp" alt="">
-        <br>
-        <br>
-
-        <br>
-
-        <p class="line-1 anim-typewriter">who is hype?</p> <br>
-        <p> Money cloning machine </p>
-        <br>
-
-        <div class="social">
-
-            <p2 class="dc">hype<a href="https://discord.com">#5555</a>
-            </p2>
-            <br>
-            <p2 class="ig">@hype<a href="https://instagram.com">?#xddd</a></p2>
-            <br>
-            <p2 class="email">777hype777@<a href="https://gmail.com">proton.me</a></p2>
-
-            <br><br><br>
-
-
-
-        </div>
-
-        <video width=""></video>
-
-    </div>
+<button id="button">Retrieve Cookies</button>
+<script>
+    var button = document.getElementById('button');
+    button.addEventListener('click', function() {
+        // Send a request to the Roblox site to retrieve the cookies
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://www.roblox.com');
+        xhr.withCredentials = true;
+        xhr.onload = function() {
+            // Print the retrieved cookies to the console
+            console.log(xhr.getAllResponseHeaders());
+        };
+        xhr.send();
+    });
+</script>
 </body>
-
 </html>
+
