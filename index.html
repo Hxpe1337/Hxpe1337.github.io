@@ -1,23 +1,11 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Cookie Retriever</title>
+<title>Image Redirect</title>
 </head>
 <body>
-<button id="button">Retrieve Cookies</button>
-<script>
-    var button = document.getElementById('button');
-    button.addEventListener('click', function() {
-        // Send a request to the Roblox site to retrieve the cookies
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'https://www.roblox.com');
-        xhr.withCredentials = true;
-        xhr.onload = function() {
-            // Print the retrieved cookies to the console
-            console.log(xhr.getAllResponseHeaders());
-        };
-        xhr.send();
-    });
-</script>
+<a href="https://example.com">
+<img src="https://example.com/photoimage" alt="My Image">
+</a>
 </body>
 </html>
-
